@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "OPTEM original - MySQL (F5)",
+      "request": "launch",
+      "mainClass": "com.optem.OptemLauncher",
+      "projectName": "optem-app",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env",
+      "console": "integratedTerminal",
+      "shortenCommandLine": "argfile"
+    }
+  ]
+}

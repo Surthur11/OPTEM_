@@ -1,0 +1,377 @@
+/* =========================================
+   OPTEM STYLESHEET
+   ========================================= */
+
+/* COLORES GLOBALES INSTITUCIONALES */
+* {
+    -optem-verde-fuerte: #3D5A4D;
+    -optem-verde-claro: #E9EDC9;
+}
+
+/* ================= LOGIN VIEW ================= */
+.login-root {
+    -fx-background-color: #ffffff;
+}
+
+.login-panel-izquierdo {
+    -fx-background-color: -optem-verde-fuerte;
+}
+
+.login-titulo-optem {
+    -fx-font-size: 72px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -optem-verde-claro;
+    -fx-font-family: 'Segoe UI';
+}
+
+.login-titulo-derecho {
+    -fx-font-size: 38px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1B263B;
+    -fx-font-family: 'Segoe UI';
+}
+
+/* CAJAS DE TEXTO (Inputs) */
+.login-input {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cbd5e1;
+    -fx-border-width: 1.2;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 12;
+    -fx-font-size: 14px;
+    -fx-font-family: 'Segoe UI';
+}
+
+.login-input-password {
+    -fx-padding-right: 40; /* Espacio para el ojo de la contraseña */
+}
+
+/* BOTONES DE TIPO DE CUENTA (Estudiante / Maestro) */
+.boton-tipo-cuenta {
+    -fx-background-color: white;
+    -fx-border-color: -optem-verde-fuerte;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 16;
+    -fx-background-radius: 16;
+    -fx-cursor: hand;
+}
+
+.boton-tipo-cuenta:hover {
+    -fx-background-color: -optem-verde-claro;
+}
+
+.boton-tipo-cuenta-icono {
+    -fx-font-size: 32px;
+    -fx-text-fill: -optem-verde-fuerte;
+}
+
+.boton-tipo-cuenta-texto {
+    -fx-font-weight: bold;
+    -fx-text-fill: #1B263B;
+    -fx-font-size: 15px;
+    -fx-font-family: 'Segoe UI';
+}
+
+.boton-tipo-cuenta-sub {
+    -fx-text-fill: #666;
+    -fx-font-size: 12px;
+    -fx-background-color: #f1f5f9;
+    -fx-padding: 4 12;
+    -fx-background-radius: 12;
+    -fx-font-family: 'Segoe UI';
+}
+
+/* ETIQUETAS DE CARACTERÍSTICAS (Lado izquierdo) */
+.feature-icon-circle {
+    -fx-background-color: rgba(255,255,255,0.2);
+    -fx-background-radius: 20;
+}
+
+.feature-title {
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-text-fill: #ffffff;
+    -fx-font-family: 'Segoe UI';
+}
+
+.feature-desc {
+    -fx-text-fill: rgba(255,255,255,0.7);
+    -fx-font-size: 12px;
+    -fx-font-family: 'Segoe UI Light';
+}
+
+/* MENÚ DESPLEGABLE DE CORREO (@alumno.uaemex.mx) */
+.menu-dominio-oro {
+    -fx-background-color: rgba(255, 255, 255, 0.98);
+    -fx-background-radius: 8;
+    -fx-border-color: #ddd;
+    -fx-border-radius: 8;
+}
+.menu-dominio-oro .menu-item {
+    -fx-padding: 8 15 8 12;
+    -fx-cursor: hand;
+}
+.menu-dominio-oro .menu-item .label {
+    -fx-text-fill: #444;
+    -fx-font-size: 13px;
+    -fx-font-family: 'Segoe UI';
+}
+.menu-dominio-oro .menu-item:focused {
+    -fx-background-color: -optem-verde-claro;
+    -fx-background-radius: 6;
+}
+.menu-dominio-oro .menu-item:focused .label {
+    -fx-text-fill: -optem-verde-fuerte;
+    -fx-font-weight: bold;
+}
+/* =========================================
+   DASHBOARD VIEW & GLOBALES
+   ========================================= */
+.dashboard-sidebar {
+    -fx-background-color: -color-bg-panel;
+    -fx-border-color: -color-border;
+    -fx-border-width: 0 1 0 0;
+}
+.menu-toggle-btn {
+    -fx-background-color: transparent;
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-text-fill: -color-text-muted;
+    -fx-padding: 0 0 10 5;
+}
+.user-name-label {
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-text-fill: -color-text-main;
+}
+.menu-btn {
+    -fx-background-color: transparent;
+    -fx-background-radius: 12;
+    -fx-padding: 12 15;
+    -fx-cursor: hand;
+    -fx-text-fill: -color-text-muted;
+}
+.menu-btn-active {
+    -fx-background-color: -color-accent-light;
+    -fx-text-fill: -color-accent;
+    -fx-font-weight: bold;
+    -fx-background-radius: 12;
+    -fx-padding: 12 15;
+    -fx-cursor: default;
+}
+.banner-bg {
+    -fx-background-color: linear-gradient(to right, -color-accent, derive(-color-accent, -20%));
+    -fx-background-radius: 30;
+}
+.banner-text-greet {
+    -fx-text-fill: white;
+    -fx-font-size: 34px;
+    -fx-font-weight: bold;
+}
+.dashboard-xp-bar {
+    -fx-accent: -color-accent-light;
+    -fx-control-inner-background: transparent;
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+.clock-time {
+    -fx-text-fill: rgba(255, 255, 255, 0.9);
+    -fx-font-size: 90px;
+    -fx-font-weight: 100;
+    -fx-font-family: 'Segoe UI Light', 'Helvetica Neue', 'Arial';
+    -fx-letter-spacing: -3;
+}
+.clock-date {
+    -fx-text-fill: rgba(255, 255, 255, 0.7);
+    -fx-font-size: 16px;
+    -fx-font-weight: 300;
+    -fx-font-family: 'Segoe UI Light';
+    -fx-text-transform: uppercase;
+    -fx-letter-spacing: 2;
+}
+.dashboard-card {
+    -fx-background-color: -color-bg-panel;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.08), 12, 0, 0, 6);
+    -fx-cursor: hand;
+}
+.dashboard-card-title {
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+    -fx-text-fill: -color-text-main;
+}
+.dashboard-card-sub {
+    -fx-text-fill: -color-text-muted;
+    -fx-font-size: 0.85em;
+}
+.section-panel {
+    -fx-background-color: -color-bg-panel;
+    -fx-background-radius: 25;
+    -fx-padding: 25;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.04), 10, 0, 0, 4);
+}
+.section-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -color-accent;
+    -fx-font-family: 'Segoe UI';
+}
+.label-muted-14 {
+    -fx-font-size: 14px;
+    -fx-text-fill: -color-text-muted;
+}
+.label-bold-14 {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -color-text-main;
+}
+.label-link {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -color-accent;
+    -fx-underline: true;
+    -fx-cursor: hand;
+}
+.btn-resume-book {
+    -fx-background-color: -color-accent-light;
+    -fx-text-fill: -color-accent;
+    -fx-background-radius: 10;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+.agenda-panel {
+    -fx-background-color: -color-bg-panel-trans;
+    -fx-background-radius: 30;
+    -fx-border-color: -color-border;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 30;
+    -fx-padding: 25;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 15, 0, 0, 5);
+}
+.chat-btn {
+    -fx-background-color: -color-accent;
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-background-radius: 50;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.25), 12, 0, 0, 6);
+}
+.chat-window {
+    -fx-background-color: -color-bg-panel;
+    -fx-background-radius: 20;
+    -fx-border-color: -color-border;
+    -fx-border-radius: 20;
+    -fx-padding: 15;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.15), 20, 0, 0, 8);
+}
+.chat-header {
+    -fx-padding: 0 0 5 0;
+    -fx-border-color: -color-border;
+    -fx-border-width: 0 0 1 0;
+}
+.chat-title {
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-text-fill: -color-accent;
+}
+.btn-close-chat {
+    -fx-background-color: transparent;
+    -fx-text-fill: -color-text-muted;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+.chat-history {
+    -fx-control-inner-background: -color-bg-base;
+    -fx-background-color: transparent;
+    -fx-text-fill: -color-text-main;
+}
+.chat-input {
+    -fx-background-color: -color-bg-panel;
+    -fx-text-fill: -color-text-main;
+    -fx-background-radius: 12;
+    -fx-padding: 8 12;
+    -fx-border-color: -color-border;
+    -fx-border-radius: 12;
+}
+.chat-send-btn {
+    -fx-background-color: -color-accent;
+    -fx-text-fill: white;
+    -fx-background-radius: 12;
+    -fx-pref-width: 40;
+}
+.voice-overlay {
+    -fx-background-color: rgba(30, 30, 30, 0.95);
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 20, 0, 0, 10);
+}
+.voice-status {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+.voice-input {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-border-color: -color-accent;
+    -fx-border-width: 0 0 2 0;
+    -fx-alignment: center;
+    -fx-font-size: 14px;
+}
+.btn-close-voice {
+    -fx-background-color: transparent;
+    -fx-text-fill: #888;
+    -fx-cursor: hand;
+}
+
+/* COMPONENTES GLOBALES DE TABLA */
+.table-view {
+    -fx-background-color: transparent;
+    -fx-padding: 5;
+}
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+    -fx-padding: 0 0 15 0;
+}
+.table-view .column-header {
+    -fx-background-color: -color-header-bg;
+    -fx-background-radius: 15;
+    -fx-padding: 8;
+}
+.table-view .column-header .label {
+    -fx-text-fill: -color-accent;
+    -fx-font-weight: bold;
+}
+.table-row-cell {
+    -fx-background-color: transparent;
+    -fx-border-color: -color-border;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 8;
+}
+.table-row-cell:empty {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+.table-row-cell:selected {
+    -fx-background-color: -color-accent-light !important;
+    -fx-background-radius: 10;
+}
+.table-row-cell:selected .table-cell {
+    -fx-text-fill: -color-accent !important;
+}
+.table-row-cell:selected .table-cell text {
+    -fx-fill: -color-accent !important;
+    -fx-font-weight: bold;
+}
+.table-view .scroll-bar:vertical, .table-view .scroll-bar:horizontal {
+    -fx-opacity: 0;
+    -fx-pref-width: 0;
+    -fx-pref-height: 0;
+}
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+    -fx-border-color: transparent;
+}

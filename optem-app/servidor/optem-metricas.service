@@ -1,0 +1,14 @@
+[Unit]
+Description=OPTEM telemetría real de Ubuntu/MySQL (cada 10 segundos)
+After=mysql.service
+Wants=mysql.service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/optem-metricas
+User=root
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
